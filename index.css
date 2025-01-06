@@ -68,13 +68,16 @@ html, body {
 }
 
 .mobile-nav-tabs-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     list-style-type: none;
     padding-left: 20px;
     padding-top: 6px;
     padding-bottom: 10px;
+}
+.mobile-nav-tabs-container.show{
+    display: flex;
 }
 
 
