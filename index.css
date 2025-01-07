@@ -24,9 +24,6 @@ html, body {
     background-color: whitesmoke;
     padding-left: 20px;
     padding-right: 20px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
 }
 
 .desktop-nav {
@@ -93,8 +90,7 @@ html, body {
     align-items: center;
     width: 95%;
     margin-top: 40px;
-    position: absolute;
-    top: 70px;
+    margin-bottom: 45px;
 }
 .home-info-container {
     display: flex;
@@ -141,10 +137,10 @@ html, body {
     font-size: 15px;
     background-color: blueviolet;
 }
-.home-projects-button {
+.home-cv-button {
     height: auto;
     padding: 6px;
-    width: 46%;
+    width: auto;
     border: none;
     cursor: pointer;
     border: 1px solid black;
@@ -155,7 +151,7 @@ html, body {
     background-color: transparent;
     margin-left: 12px;
 }
-.home-projects-button:hover {
+.home-cv-button:hover {
     color: white;
     background-color: black;
 }
@@ -164,6 +160,32 @@ html, body {
     width: 80%;
     height: 350px;
     margin-top: 16px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    padding: 6px;
+}
+.projects-heading {
+    align-self: flex-start;
+    color: black;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.projects-heading span {
+    color: blueviolet;
+    font-size: 55px;
+}
+.carousel {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 
