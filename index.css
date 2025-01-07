@@ -182,7 +182,7 @@ html, body {
     color: blueviolet;
     font-size: 55px;
 }
-.carousel {
+.carousel-body {
     background-color: whitesmoke;
     padding: 15px;
     border-radius: 8px;
