@@ -85,13 +85,15 @@ html, body {
 .container-fluid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     width: 100%;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     flex-grow: 1;
     background-color: black;
+    padding-top: 55px;
 }
 
 
@@ -102,9 +104,8 @@ html, body {
     justify-content: center;
     align-items: center;
     width: 95%;
-    padding-top: 55px;
-    margin-bottom: 45px;
-    color: white;
+    margin-bottom: 30px;
+    margin-left: 20px;
 }
 .home-info-container {
     display: flex;
@@ -135,13 +136,6 @@ html, body {
 .profile-title span {
     color: blueviolet;
 }
-.home-buttons-container {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    justify-content: flex-start;
-    margin-top: 18px;
-}
 .home-contact-button {
     height: auto;
     padding: 6px;
@@ -153,24 +147,6 @@ html, body {
     font-weight: 500;
     font-size: 15px;
     background-color: rgb(72, 32, 109);
-}
-.home-cv-button {
-    height: auto;
-    padding: 6px;
-    width: auto;
-    border: none;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 8px;
-    color: white;
-    font-weight: 500;
-    font-size: 15px;
-    background-color: transparent;
-    margin-left: 12px;
-}
-.home-cv-button:hover {
-    color: black;
-    background-color: white;
 }
 .profile-pic {
     width: 80%;
@@ -186,7 +162,8 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     width: 95%;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    margin-left: 20px;
     padding: 12px;
     background-color: inherit;
 }
@@ -267,6 +244,70 @@ html, body {
 }
 
 
+/* About Container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 95%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 12px;
+    background-color: inherit;
+}
+.about-title {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+.about-title span {
+    color: blueviolet;
+    font-size: 55px;
+}
+.internships-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-left: 2px solid rgb(177, 118, 231);
+}
+.internship-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    margin-left: 15px;
+}
+.internship-details-container:hover {
+    background-color: rgb(12, 11, 11);
+    border-radius: 10px;
+}
+.role-and-company {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.role-and-company span {
+    color: blueviolet;
+}
+.duration {
+    color: darkgrey;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 0;
+    margin-top: 0;
+}
+.role-details-container {
+    color: whitesmoke;
+    list-style-type: square;
+}
+.role-details-container li::marker {
+    color: rgb(177, 118, 231);
+}
+
+
 @media screen and (min-width: 768px) {
     .desktop-nav-tabs-container {
         display: flex;
@@ -296,7 +337,7 @@ html, body {
     .profile-title {
         font-size: 45px;
     }
-    .home-contact-button, .home-projects-button {
+    .home-contact-button {
         font-size: 18px;
     }
 
