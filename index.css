@@ -6,24 +6,19 @@
 
 html, body {
     font-family: sans-serif;
-    background-color: white;
-    width: 100%; /* Ensure full-width layout */
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
     width: 100%;
     min-height: 100vh;
+    background-color: black;
+    background-size: cover;
 }
-
 .nav {
     display: flex;
     flex-direction: column;
     width: 100%; 
     background-color: whitesmoke;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0;padding: 0;
 }
 
 .desktop-nav {
@@ -37,8 +32,13 @@ html, body {
 .title {
     text-decoration: none;
     color: black;
-    font-size: 38px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 12px;
+}
+.title:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 .title span {
@@ -82,15 +82,29 @@ html, body {
     display: flex;
 }
 
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    background-color: black;
+}
 
+
+/* Home Container Styles */
 .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 95%;
-    margin-top: 40px;
+    padding-top: 55px;
     margin-bottom: 45px;
+    color: white;
 }
 .home-info-container {
     display: flex;
@@ -100,17 +114,20 @@ html, body {
     padding: 12px;
 }
 .home-intro {
-    color: rgb(99, 97, 97);
+    color: rgb(148, 142, 142);
     font-weight: 500;
     font-size: 25px;
 }
+.home-intro span {
+    color: darkgray;
+}
 .home-brief {
-    color: gray;
+    color: darkgray;
     font-weight: 500;
     font-size: 22px;
 } 
 .profile-title {
-    color: #000;
+    color: white;
     font-size: 36px;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -135,7 +152,7 @@ html, body {
     color: white;
     font-weight: 500;
     font-size: 15px;
-    background-color: blueviolet;
+    background-color: rgb(72, 32, 109);
 }
 .home-cv-button {
     height: auto;
@@ -143,49 +160,110 @@ html, body {
     width: auto;
     border: none;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 8px;
-    color: black;
+    color: white;
     font-weight: 500;
     font-size: 15px;
     background-color: transparent;
     margin-left: 12px;
 }
 .home-cv-button:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
-
 .profile-pic {
     width: 80%;
     height: 350px;
     margin-top: 16px;
 }
 
+
+/* Projects Container Styles */
 .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 95%;
-    margin-top: 20px;
     margin-bottom: 45px;
-    padding: 6px;
+    padding: 12px;
+    background-color: inherit;
 }
-.projects-heading {
-    align-self: flex-start;
-    color: black;
+.projects-container-title {
+    color: white;
     font-size: 35px;
     margin-bottom: 12px;
 }
-.projects-heading span {
+.projects-container-title span {
     color: blueviolet;
     font-size: 55px;
 }
-.carousel-body {
-    background-color: whitesmoke;
-    padding: 15px;
+.projects-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-carousel-container {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    background-color: rgb(39, 35, 35);
     border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 12px;
+}
+.project-image {
+    width: 100%;
+    height: 300px;
+}
+.project-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background-color: inherit;
+}
+.project-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.project-description {
+    color: rgb(202, 201, 201);
+    font-size: 15px;
+    font-weight: 500;
+}
+.project-info-container b {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+.project-link-button {
+    height: auto;
+    width: auto;
+    padding: 8px;
+    border: 1px solid blueviolet;
+    border-radius: 8px;
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.project-link-button:hover {
+    color: white;
+    background-color: blueviolet;
 }
 
 
@@ -212,9 +290,28 @@ html, body {
         width: 48%;
     }
     .profile-pic {
-        width: 48%;
+        width: 40%;
+        height: 385px;
+    }
+    .profile-title {
+        font-size: 45px;
     }
     .home-contact-button, .home-projects-button {
+        font-size: 18px;
+    }
+
+    .projects-carousel-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .projects-container-title {
+        font-size: 45px;
+    }
+    .project-title {
+        font-size: 32px;
+    }
+    .project-description {
         font-size: 18px;
     }
 }
