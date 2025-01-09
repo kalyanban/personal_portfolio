@@ -105,7 +105,7 @@ html, body {
     align-items: center;
     width: 95%;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .home-info-container {
     display: flex;
@@ -136,10 +136,15 @@ html, body {
 .profile-title span {
     color: blueviolet;
 }
+.home-info-container a {
+    text-decoration: none;
+    width: 44%;
+    /* color: white; */
+}
 .home-contact-button {
     height: auto;
     padding: 6px;
-    width: 46%;
+    width: 100%;
     border: none;
     cursor: pointer;
     border-radius: 8px;
@@ -163,7 +168,7 @@ html, body {
     align-items: flex-start;
     width: 95%;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 12px;
     background-color: inherit;
 }
@@ -252,7 +257,7 @@ html, body {
     align-items: flex-start;
     width: 95%;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 12px;
     background-color: inherit;
 }
@@ -306,6 +311,150 @@ html, body {
 .role-details-container li::marker {
     color: rgb(177, 118, 231);
 }
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(39, 36, 36);
+    border-radius: 8px;
+    padding: 12px;
+}
+.skill-set-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.skillset-heading {
+    color: rgb(226, 213, 236);
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+.skill-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+.skill-list-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(148, 78, 214);
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.skill-list-container li:hover {
+    height: 38px;
+    font-size: 20px;
+}
+.story-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid rgb(177, 118, 231);
+    border-radius: 8px;
+}
+.story-container:hover {
+    background-color: rgb(12, 11, 11)
+}
+.story-container p {
+    color: rgb(196, 196, 196);
+    font-size: 20px;
+    padding-top: 8px;
+}
+.story-container span {
+    color: rgb(145, 76, 209);
+}
+
+
+/* Footer Section */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    background-color: rgb(23, 19, 27);
+}
+.footer-heading {
+    color: rgb(218, 214, 214);
+    font-size: 35px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.footer-tabs-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: auto;
+    list-style-type: none;
+    margin: 0;padding: 0;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    padding-top: 5px;padding-bottom: 5px;
+}
+.footer-tab {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: darkgray;
+}
+.footer-tab:hover {
+    color: rgb(167, 97, 231);
+    font-size: 18px;
+}
+.all-contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 13px;
+    padding: 8px;
+}
+.contact-name {
+    color: rgb(172, 165, 179);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 0;
+}
+.contact-name:hover {
+    text-decoration: underline;
+}
+.all-contacts-container i {
+    font-size: 22px;
+    color: rgb(149, 97, 197);
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -354,5 +503,26 @@ html, body {
     }
     .project-description {
         font-size: 18px;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+    }
+    .contact-name {
+        font-size: 22px;
+        margin-left: 8px;
+    }
+    .all-contacts-container i {
+        font-size: 30px;
+    }
+    .footer-tab {
+        font-size: 19px;
+    }
+    .footer-tab:hover {
+        font-size: 22px;
     }
 }
