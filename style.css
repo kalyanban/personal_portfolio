@@ -10,7 +10,7 @@ html, body {
     padding: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background-size: cover;
 }
 .nav {
@@ -110,14 +110,14 @@ html, body {
 .home-info-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 85%;
     padding: 12px;
 }
 .home-intro {
     color: rgb(148, 142, 142);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
 }
 .home-intro span {
     color: darkgray;
@@ -125,12 +125,12 @@ html, body {
 .home-brief {
     color: darkgray;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
+    text-align: center;
 } 
 .profile-title {
     color: white;
-    font-size: 36px;
-    margin-top: 12px;
+    font-size: 26px;
     margin-bottom: 12px;
 }
 .profile-title span {
@@ -154,9 +154,12 @@ html, body {
     background-color: rgb(72, 32, 109);
 }
 .profile-pic {
-    width: 80%;
-    height: 350px;
-    margin-top: 16px;
+    width: 300px;
+    height: 300px;
+    /* margin-top: 16px; */
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    padding: 8px;
 }
 
 
@@ -421,7 +424,6 @@ html, body {
 }
 .all-contacts-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 85%;
@@ -431,7 +433,7 @@ html, body {
 .contact-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: auto;
     width: 100%;
@@ -440,11 +442,7 @@ html, body {
     padding: 8px;
 }
 .contact-name {
-    color: rgb(172, 165, 179);
-    font-weight: 500;
-    font-size: 20px;
-    margin: 0;
-    padding-bottom: 0;
+    display: none;
 }
 .contact-name:hover {
     text-decoration: underline;
@@ -471,16 +469,22 @@ html, body {
 
     .home-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
         justify-content: space-around;
         width: 95%;
     }
     .home-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 48%;
     }
+    .home-brief {
+        text-align: left;
+    }
     .profile-pic {
-        width: 40%;
+        width: 385px;
         height: 385px;
     }
     .profile-title {
@@ -508,14 +512,22 @@ html, body {
         font-size: 18px;
     }
 
+    .all-contacts-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .contact-container {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         height: 65px;
     }
     .contact-name {
+        display: flex;
+        color: whitesmoke;
         font-size: 22px;
         margin-left: 8px;
     }
