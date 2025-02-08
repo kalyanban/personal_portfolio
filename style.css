@@ -141,6 +141,12 @@ html, body {
     width: 44%;
     /* color: white; */
 }
+.home-buttons-container {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    justify-content: space-around;
+}
 .home-contact-button {
     height: auto;
     padding: 6px;
@@ -152,6 +158,23 @@ html, body {
     font-weight: 500;
     font-size: 15px;
     background-color: rgb(72, 32, 109);
+}
+.home-resume-button {
+    height: auto;
+    padding: 6px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid white;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+}
+.home-resume-button:hover {
+    background-color: blueviolet;
+    border: none;
 }
 .profile-pic {
     width: 300px;
@@ -205,6 +228,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     width: 95%;
+    height: 210px;
     padding: 12px;
 }
 .project-image {
@@ -233,7 +257,7 @@ html, body {
 .project-info-container b {
     color: white;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 }
 .project-link-button {
     height: auto;
@@ -331,7 +355,7 @@ html, body {
 }
 .skillset-heading {
     color: rgb(226, 213, 236);
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 8px;
 }
 .skill-list-container {
@@ -345,7 +369,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 36px;
+    height: 30px;
     width: auto;
     margin-bottom: 10px;
     padding: 10px;
@@ -353,13 +377,13 @@ html, body {
     background-color: rgb(148, 78, 214);
     color: white;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 14px;
     margin-right: 20px;
     cursor: pointer;
 }
 .skill-list-container li:hover {
-    height: 38px;
-    font-size: 20px;
+    height: 32px;
+    font-size: 26px;
 }
 .story-container {
     width: 100%;
@@ -373,7 +397,7 @@ html, body {
 }
 .story-container p {
     color: rgb(196, 196, 196);
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 8px;
 }
 .story-container span {
@@ -396,7 +420,7 @@ html, body {
 }
 .footer-heading {
     color: rgb(218, 214, 214);
-    font-size: 35px;
+    font-size: 28px;
     padding-top: 25px;
     padding-bottom: 20px;
 }
@@ -410,7 +434,9 @@ html, body {
     margin: 0;padding: 0;
     border: 1px solid darkgray;
     border-radius: 6px;
-    padding-top: 5px;padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 16px;
 }
 .footer-tab {
     text-decoration: none;
@@ -427,7 +453,7 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 85%;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     margin-bottom: 8px;
 }
 .contact-container {
@@ -482,6 +508,10 @@ html, body {
     }
     .home-brief {
         text-align: left;
+        font-size: 20px;
+    }
+    .home-intro {
+        font-size: 22px;
     }
     .profile-pic {
         width: 385px;
@@ -490,7 +520,7 @@ html, body {
     .profile-title {
         font-size: 45px;
     }
-    .home-contact-button {
+    .home-contact-button, .home-resume-button {
         font-size: 18px;
     }
 
