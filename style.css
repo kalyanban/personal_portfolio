@@ -383,7 +383,7 @@ html, body {
 }
 .skill-list-container li:hover {
     height: 32px;
-    font-size: 26px;
+    font-size: 16px;
 }
 .story-container {
     width: 100%;
@@ -419,8 +419,8 @@ html, body {
     background-color: rgb(23, 19, 27);
 }
 .footer-heading {
-    color: rgb(218, 214, 214);
-    font-size: 28px;
+    color: rgb(248, 240, 240);
+    font-size: 30px;
     padding-top: 25px;
     padding-bottom: 20px;
 }
@@ -442,7 +442,7 @@ html, body {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    color: darkgray;
+    color: rgb(182, 168, 168);
 }
 .footer-tab:hover {
     color: rgb(167, 97, 231);
@@ -520,6 +520,11 @@ html, body {
     .profile-title {
         font-size: 45px;
     }
+    .home-buttons-container {
+        display: flex;
+        align-items: flex-start;
+        width: 95%;
+    }
     .home-contact-button, .home-resume-button {
         font-size: 18px;
     }
@@ -542,6 +547,23 @@ html, body {
         font-size: 18px;
     }
 
+    .skillset-heading {
+        font-size: 23px;
+    }
+    .skill-list-container li {
+        height: 32px;
+        font-size: 16px;
+        width: auto;
+    }
+    .skill-list-container li:hover {
+        height: 34px;
+        width: 20px;
+        width: auto;
+    }
+    .story-container p {
+        font-size: 18px;
+    }
+
     .all-contacts-container {
         display: flex;
         flex-direction: column;
@@ -554,11 +576,12 @@ html, body {
         align-items: flex-start;
         justify-content: center;
         height: 65px;
+        margin-bottom: 0;
     }
     .contact-name {
         display: flex;
         color: whitesmoke;
-        font-size: 22px;
+        font-size: 18px;
         margin-left: 8px;
     }
     .all-contacts-container i {
@@ -568,6 +591,6 @@ html, body {
         font-size: 19px;
     }
     .footer-tab:hover {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
